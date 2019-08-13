@@ -51,6 +51,7 @@ public class ClienteController {
 		cliente.setNombre(clientevo.getNombre());
 		cliente.setApellido(clientevo.getApellido());
 		cliente.setDireccion(clientevo.getDireccion());
+		cliente.setIdentificacion(clientevo.getIdentificacion());
 		cliente.setTelefono(clientevo.getTelefono());
 		cliente.setEmail(clientevo.getEmail());
 		return new ResponseEntity<>(this.clienteService.create(cliente), HttpStatus.CREATED);
